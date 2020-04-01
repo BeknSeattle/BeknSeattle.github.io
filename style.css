@@ -1,0 +1,308 @@
+/*mobile first*/
+html {
+    background-color: #fbfbfd;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro cons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+body {
+    font-size: 12px;
+    line-height: 1.5;            
+    margin: 0 auto;
+    color : #1d1d1f;
+}
+a {
+    text-decoration: none;
+    color: #1d1d1f;
+}
+.wrapper {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.active {
+    padding-bottom:.2em;
+    border-bottom: 1px solid #fa6a43;
+    line-height: 1em;
+}
+header h1 {  
+    margin: 0;
+    padding: .7em 1em 0;
+}  
+.header-flex {
+    padding-top: 1.7em;
+} 
+nav a {
+    font-size: 1.2em;
+    text-decoration: none;      
+    text-transform: uppercase;
+    color: #f5f5f7;
+}
+.sidebar,
+.his-sidebar {
+    padding: 2em;
+}
+ul {
+    padding-left: 0; 
+}
+nav li,
+.sidebar li,
+.his-sidebar li {
+    list-style-type: none; 
+    display: inline-flex;
+}
+.sidebar h3,
+.his-sidebar h3 {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 0;
+}
+nav li {
+    padding: 1em;
+}
+.sidebar li,
+.his-sidebar li {
+    padding: 1em 0; 
+}
+li img {
+    width: 5em;
+    border-radius: 50%;
+    padding:.5em;
+    background-color: #f2f2f2;
+}
+.avatar-pic {
+    display: inline;
+}
+figcaption {
+    font-size: 1em;
+}
+header a {
+    font-weight: 400;
+    color: #f5f5f7;    
+}
+h1 {
+   margin: 0;
+}
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/*start of the main body for the homepage or we page*/      
+.button,
+.home-button {
+    background-color: #e5a023; 
+    border-radius: 4px;
+    border:none;
+    padding: 1em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;    
+    margin: 1em;
+    cursor: pointer;
+}
+.home-button {
+    font-size:.8em;
+    background-color: #fa6a43;
+    text-transform: uppercase;
+}
+.nav-button {
+    font-size: 1em;  /*adjusting this changes the padding of header-flex see 33*/
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;   
+    width: 100%;  
+    margin: 0 auto;       
+}
+.main-article,
+.article-design-one,
+.article-design-two,
+.second-main-article,
+.his-second-main-article {
+    padding: 2em;
+    font-size: 1.5em;
+}
+.hero-caption,
+.article-caption,
+.hero-caption {
+    font-size: 1em;            
+    text-transform:u ppercase;
+    font-style: italic;
+    padding: 1em;
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.first-article-image{
+    background-size: cover;            
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #f2f2f2;
+    padding: 2em;
+    max-height: auto;
+}
+.footer-design {
+    padding: 2em;
+}
+footer li {
+    list-style-type: none; 
+}
+footer p,
+footer h3 {
+    line-height: 1.6;
+    margin-bottom:0;
+}  
+footer h3 {
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 1em;
+}
+ 
+/* media queries for we page or blog home page*/
+@media only screen and (min-width:700px) {
+    section {
+        grid-template-columns: 1fr;
+        width: 70%;  
+    }
+    nav li:last-child {
+        padding-right: 4em;
+    }
+    .push-right {
+        margin-left:auto;
+    }
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}    
+@media only screen and (min-width:1200px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 70%;  
+    }
+    .main-article {
+        grid-area: 1/1/1/4;
+    }
+    .sidebar {
+        grid-area:2/1/2/4; 
+    }
+    .article-design-one {
+        grid-area:3/1/3/3;
+    }
+    .article-design-two {
+        grid-area:3/3/4/4;
+    }
+    .second-main-article {
+        grid-area:4/1/4/4;
+    }
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer-design {
+        padding: 3em;
+    }
+}
+@media only screen and (min-width:1400px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width:60%;  
+    }
+    .main-article{
+        grid-area: 2/2/1/4;
+    }
+    .sidebar{
+        grid-area:2/1/2/1; 
+    }
+    .article-design-one{
+        grid-area:2/2/3/2;
+    }
+    .article-design-two{
+        grid-area:3/3/2/4;
+    }    
+    .second-main-article{
+        grid-area:3/2/3/4;
+    }   
+}
+
+/*His and Me Pages*/
+.flex-grid {
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.avatar-pic{
+    width: 3em;
+    border-radius: 50%;
+}
+.avatar-information{
+    font-size: .7em;
+    margin-bottom: 7em;
+}
+.flex-children {
+    padding: 2em;
+    flex-basis: 70%;
+    font-size: 1.2em;
+    background-color: #f2f2f2;   
+}
+.blog-information {
+    margin-bottom: 2em;
+}
+.blog-information h2 {
+    margin-bottom: 1em;
+}
+.blog-information p {
+    margin-top: 0;
+    /* color: #888; */
+}
+.blog-information span{
+    font-style: italic;
+}
+.blog-underline{
+    border-bottom: 1px solid #fa6a43
+}
+@media only screen and (min-width:800px) {
+    .flex-children {
+        flex-basis: 40%;
+    } 
+}
+@media only screen and (min-width:1200px) {
+    .flex-children {
+        flex-basis: 30%;
+    } 
+    .his-sidebar {
+        grid-area: 2/1/2/1; 
+    } 
+    .his-second-main-article {  
+        grid-area: 2/2/3/4;
+    }
+}    
+@media only screen and (min-width:1400px){
+    .his-image {
+        width: 60%;
+        margin: 0 auto;
+}
+    .flex-children {
+        flex-basis: 20%;
+    } 
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 60%;  
+    }
+}
