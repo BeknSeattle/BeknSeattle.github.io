@@ -1,0 +1,24 @@
+/*Basic Footer Layout*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #f2f2f2;
+    padding: 2em;
+    max-height: auto;
+}
+.footer-design {
+    padding: 2em;
+}
+footer li {
+    list-style-type: none; 
+}
+footer p,
+footer h3 {
+    line-height: 1.6;
+    margin-bottom:0;
+}  
+footer h3 {
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 1em;
+}

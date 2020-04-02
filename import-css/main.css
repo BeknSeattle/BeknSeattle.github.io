@@ -1,0 +1,151 @@
+/*Main CSS Body*/
+.wrapper {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.active {
+    padding-bottom:.2em;
+    border-bottom: 1px solid #fa6a43;
+    line-height: 1em;
+}
+header a {
+    font-weight: 400;
+    color: #f5f5f7;    
+}
+header h1 {  
+    margin: 0;
+    padding: .7em 1em 0;
+}  
+.header-flex {
+    padding-top: 1.7em;
+} 
+nav a {
+    font-size: 1.2em;
+    text-decoration: none;      
+    text-transform: uppercase;
+    color: #f5f5f7;
+}
+.sidebar,
+.his-sidebar {
+    padding: 2em;
+}
+.sidebar-links {
+    font-size: 1.5em;
+}
+.sidebar-links li > a {
+    padding: .5em .7em;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+nav li,
+.sidebar li,
+.his-sidebar li {
+    list-style-type: none; 
+    display: inline-flex;
+}
+.sidebar h3,
+.his-sidebar h3 {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 0;
+}
+nav li {
+    padding: 1em;
+}
+.sidebar li,
+.his-sidebar li {
+    padding: 1em 0; 
+}
+li img {
+    width: 5em;
+    border-radius: 50%;
+    padding:.5em;
+    background-color: #f2f2f2;
+}
+.avatar-pic {
+    display: inline;
+}
+
+/*start of the main body for the homepage or we page*/     
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;   
+    width: 100%;  
+    margin: 0 auto;       
+}
+.main-article,
+.article-design-one,
+.article-design-two,
+.second-main-article,
+.his-second-main-article {
+    padding: 2em;
+    font-size: 1.5em;
+}
+.hero-caption,
+.article-caption,
+.hero-caption {
+    font-size: 1em;            
+    text-transform:u ppercase;
+    font-style: italic;
+    padding: 1em;
+}
+img {
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.first-article-image{
+    background-size: cover;            
+}
+
+/*His and Me Pages*/
+.flex-grid {
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.avatar-pic{
+    width: 3em;
+    border-radius: 50%;
+}
+.avatar-information{
+    font-size: .7em;
+    margin-bottom: 7em;
+}
+.flex-children {
+    padding: 2em;
+    flex-basis: 70%;
+    font-size: 1.2em;
+    background-color: #f2f2f2;   
+}
+.blog-information {
+    margin-bottom: 2em;
+}
+.blog-information h2 {
+    margin-bottom: 1em;
+}
+.blog-information p {
+    margin-top: 0;
+    /* color: #888; */
+}
+.blog-information span{
+    font-style: italic;
+}
+.blog-underline{
+    border-bottom: 1px solid #fa6a43
+}

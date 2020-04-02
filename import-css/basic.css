@@ -1,0 +1,42 @@
+/*Mobile First*/
+body {
+    background-color: #fbfbfd;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro cons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 12px;
+    line-height: 1.5;            
+    margin: 0 auto;
+    color : #1d1d1f;
+}
+a {
+    text-decoration: none;
+    color: #1d1d1f;
+}
+q {
+    font-style: italic;
+}
+blockquote {
+    font-size: 2em;
+    font-style: italic;
+}
+q,
+blockquote::before {
+    content: open-quote;
+}
+q,
+blockquote::after {
+    content: close-quote;    
+}
+ul {
+    padding-left: 0; 
+}
+figcaption {
+    font-size: 1em;
+}
+h1 {
+   margin: 0;
+}
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: 1;
+}
