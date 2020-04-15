@@ -20,3 +20,9 @@
     min-height: 0px;
     padding-bottom: 0px;
 }
+.mc-field-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: 600;
+}
