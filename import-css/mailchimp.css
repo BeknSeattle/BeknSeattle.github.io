@@ -34,8 +34,9 @@ form {
     font-size: 1.2em;
 }
 .mailchimp-holder {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+    padding-top: 7em;
 }
 .mailchimp-body {
     margin: 0 auto;
@@ -62,6 +63,30 @@ input[type=email]:focus {
     border-bottom: 1px solid #fa6a43;
 }
 .response {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+}
+.form-container {
+    width: 100%;
+    margin: 0 auto;
+}
+/*mailchimp media queries*/
+@media only screen and (min-width:700px) {
+    .mailchimp-holder {
+        width: 80%;
+    }
+    .form-container {
+    width: 80%;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .response {
+        width: 60%;
+    }
+    .mailchimp-holder {
+        width: 60%;
+    }
+    .form-container {
+        width: 60%;
+    }
 }
