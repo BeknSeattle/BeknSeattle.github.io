@@ -58,3 +58,10 @@ input[type=email]:focus {
 .content__gdprLegal p {
     font-size: .8em;
 }
+.content__gdprLegal a {
+    border-bottom: 1px solid #fa6a43;
+}
+.response {
+    width: 60%;
+    margin: 0 auto;
+}
